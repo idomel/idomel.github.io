@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ido Mellul</title>
+<meta name="description" content="Ido Mellul — PhD student, Sobel olfaction lab, Weizmann Institute of Science.">
+<style>
+  :root{
+    --bg:#faf9f7; --card:#ffffff; --ink:#1a1a1a; --muted:#6b6b6b;
+    --line:#e4e1dc; --accent:#1c5e63; --accent-ink:#ffffff; --tag:#eef3f3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141414; --card:#1d1d1d; --ink:#f2f0ed; --muted:#a0a0a0;
+      --line:#333; --accent:#4fb3ba; --accent-ink:#0d2a2c; --tag:#232f30;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; padding:30px 18px 48px;
+  }
+  .wrap{max-width:430px; margin:0 auto}
+
+  /* ---- identity ---- */
+  header{text-align:center; margin-bottom:22px}
+  .avatar{
+    width:92px; height:92px; border-radius:50%; margin:0 auto 14px;
+    background:var(--accent); color:var(--accent-ink);
+    display:flex; align-items:center; justify-content:center;
+    font-size:33px; font-weight:600; letter-spacing:.5px; overflow:hidden;
+  }
+  .avatar img{width:100%; height:100%; object-fit:cover}
+  h1{font-size:27px; margin:0 0 6px; letter-spacing:-.3px}
+  .role{color:var(--muted); font-size:15px; margin:0}
+  .role strong{color:var(--ink); font-weight:600}
+
+  /* ---- primary actions ---- */
+  .actions{display:flex; gap:10px; margin-bottom:30px}
+  .actions a{
+    flex:1; text-decoration:none; text-align:center; border-radius:13px;
+    padding:14px 8px; font-size:15px; font-weight:600; line-height:1.25;
+    border:1px solid var(--accent);
+  }
+  .actions .fill{background:var(--accent); color:var(--accent-ink)}
+  .actions .ghost{background:transparent; color:var(--accent)}
+  .actions .sub{display:block; font-size:12px; font-weight:400; opacity:.75; margin-top:2px}
+
+  /* ---- sections ---- */
+  h2{
+    font-size:12px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 10px; font-weight:600;
+  }
+  section{margin-bottom:28px}
+
+  /* ---- work items ---- */
+  .item{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:16px; margin-bottom:10px;
+  }
+  .item.current{border-color:var(--accent)}
+  .tag{
+    display:inline-block; background:var(--tag); color:var(--accent);
+    font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    padding:4px 9px; border-radius:6px; margin-bottom:9px;
+  }
+  .item h3{font-size:17px; line-height:1.35; margin:0 0 7px; font-weight:600}
+  .item p{margin:0; font-size:14px; color:var(--muted)}
+  .links{display:flex; flex-wrap:wrap; gap:8px; margin-top:13px}
+  .links a{
+    text-decoration:none; font-size:14px; font-weight:500;
+    color:var(--ink); background:var(--bg); border:1px solid var(--line);
+    border-radius:9px; padding:8px 13px;
+  }
+
+  /* ---- elsewhere ---- */
+  .row{
+    display:flex; align-items:center; gap:12px; text-decoration:none;
+    background:var(--card); color:var(--ink); border:1px solid var(--line);
+    border-radius:12px; padding:13px 15px; margin-bottom:8px; font-size:15px;
+  }
+  .row .ico{width:20px; text-align:center; font-size:16px; flex:none; color:var(--muted)}
+  footer{text-align:center; color:var(--muted); font-size:12px; margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ==================== EDIT FROM HERE ==================== -->
+
+  <header>
+    <!-- Photo: drop a square photo.jpg beside this file and swap the two lines below. -->
+    <div class="avatar">IM</div>
+    <!-- <div class="avatar"><img src="photo.jpg" alt="Ido Mellul"></div> -->
+
+    <h1>Ido Mellul</h1>
+    <p class="role">PhD student · <strong>Sobel olfaction lab</strong><br>Weizmann Institute of Science</p>
+  </header>
+
+  <div class="actions">
+    <a class="fill" href="ido.vcf">Save contact<span class="sub">to your phone</span></a>
+    <a class="ghost" href="mailto:ido.mellul@gmail.com">Email me<span class="sub">ido.mellul@gmail.com</span></a>
+  </div>
+
+  <section>
+    <h2>Work</h2>
+
+    <!-- ---- CURRENT: the poster on the wall. Swap the conference and the title. ---- -->
+    <div class="item current">
+      <span class="tag">Poster · CONFERENCE 2026</span>
+      <h3>POSTER TITLE GOES HERE</h3>
+      <p>Comparing olfactory perceptual space across three datasets — Dravnieks (1985),
+         Keller &amp; Vosshall (2017), Bierling &amp; Croy (2021) — using PCA and
+         Procrustes-based cross-dataset comparison (PROTEST) over the shared molecules.</p>
+      <div class="links">
+        <a href="poster.pdf">Download PDF</a>
+        <a href="https://github.com/YOUR-USERNAME/PROJECT-REPO">Code &amp; data</a>
+      </div>
+    </div>
+
+    <!-- ---- TEMPLATE: copy this block for the next paper or poster, newest on top. ----
+    <div class="item">
+      <span class="tag">Paper · Journal 2027</span>
+      <h3>Title of the thing</h3>
+      <p>One sentence on what it found.</p>
+      <div class="links">
+        <a href="https://doi.org/...">DOI</a>
+        <a href="https://github.com/...">Code</a>
+      </div>
+    </div>
+    ---- END TEMPLATE ---- -->
+
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <!-- Delete any row you don't have a real link for. -->
+    <a class="row" href="https://scholar.google.com/citations?user=YOUR-ID"><span class="ico">🎓</span>Google Scholar</a>
+    <a class="row" href="https://orcid.org/0000-0000-0000-0000"><span class="ico">iD</span>ORCID</a>
+    <a class="row" href="https://github.com/YOUR-USERNAME"><span class="ico">&lt;/&gt;</span>GitHub</a>
+    <a class="row" href="https://www.linkedin.com/in/YOUR-HANDLE"><span class="ico">in</span>LinkedIn</a>
+  </section>
+
+<!-- ==================== EDIT TO HERE ==================== -->
+
+  <footer>Updated September 2026</footer>
+</div>
+</body>
+</html>
